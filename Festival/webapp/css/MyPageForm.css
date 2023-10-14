@@ -1,0 +1,774 @@
+@charset "UTF-8";
+
+/*
+.fonts {
+  font-family: 'Josefin Slab', serif;
+}
+*/
+
+.pageTitle {
+  font-size: 2em;
+  font-weight: 700;
+  text-transform: uppercase;
+  line-height: 1em;
+  color: #00AE68;
+}
+
+.pageSubTitle {
+  margin-bottom: 0.5em;
+  font-size: 1.3em;
+  font-weight: 700;
+  line-height: 1em;
+  color: #222;
+}
+
+.articleTitle {
+  font-size: 1.15em;
+  font-weight: 700;
+  line-height: 1em;
+  color: #222;
+}
+
+.wrapper {
+  width: 600px;
+  margin: 20px auto;
+}
+
+.memberModify {
+	position: relative;
+	float: right;
+    top: 130px;
+}
+
+.w-btn {
+    position: relative;
+    border: none;
+    display: inline-block;
+    padding: 15px 30px;
+    border-radius: 15px;
+    font-family: "paybooc-Light", sans-serif;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+    text-decoration: none;
+    font-weight: 600;
+    transition: 0.25s;
+}
+
+.w-btn-indigo {
+    background-color: aliceblue;
+    color: #1e6b7b;
+}
+
+.w-btn-brown {
+    background-color: #ce6d39;
+    color: #ffeee4;
+}
+
+.w-btn:hover {
+    letter-spacing: 2px;
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
+.w-btn:active {
+    transform: scale(1.5);
+}
+
+/* a.button {
+  display: block;
+  position: relative;
+  float: left;
+  width: 120px;
+  padding: 0;
+  margin: 10px 20px 10px 0;
+  font-weight: 600;
+  text-align: center;
+  line-height: 50px;
+  color: #FFF;
+  border-radius: 5px;
+  transition: all 0.2s ;
+}
+
+.btnBlueGreen {
+  background: #00AE68;
+}
+
+.btnLightBlue {
+  background: #5DC8CD;
+}
+
+FADE
+.btnFade.btnBlueGreen:hover {
+  background: #21825B;
+}
+
+.btnFade.btnLightBlue:hover {
+  background: #01939A;
+}
+
+3D
+.btnBlueGreen.btnPush {
+  box-shadow: 0px 5px 0px 0px #007144;
+}
+
+.btnLightBlue.btnPush {
+  box-shadow: 0px 5px 0px 0px #1E8185;
+}
+
+.btnPush:hover {
+  margin-top: 15px;
+  margin-bottom: 5px;
+}
+
+.btnBlueGreen.btnPush:hover {
+  box-shadow: 0px 0px 0px 0px #007144;
+}
+
+.btnLightBlue.btnPush:hover {
+  box-shadow: 0px 0px 0px 0px #1E8185;
+}
+
+BORDER
+.btnBlueGreen.btnBorder {
+  box-shadow: 0px 0px 0px 0px #21825B;
+}
+
+.btnBlueGreen.btnBorder:hover {
+  box-shadow: 0px 0px 0px 5px #21825B;
+}
+
+.btnLightBlue.btnBorder {
+  box-shadow: 0px 0px 0px 0px #01939A;
+}
+
+.btnLightBlue.btnBorder:hover {
+  box-shadow: 0px 0px 0px 5px #01939A;
+}
+
+FLOAT
+.btnFloat {
+  background: none;
+  box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.5);
+}
+
+.btnFloat:before {
+  content: 'Float';
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 120px;
+  height: 50px;
+  border-radius: 5px;
+  transition: all 0.2s ;
+}
+
+.btnBlueGreen.btnFloat:before {
+  background: #00AE68;
+}
+
+.btnLightBlue.btnFloat:before {
+  background: #5DC8CD;
+}
+
+.btnFloat:before {
+  box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.4);
+}
+
+.btnFloat:hover:before {
+  
+}
+
+.btnFloat:hover:before {
+  margin-top: -2px;
+  margin-left: 0px;
+  transform: scale(1.1,1.1);
+  -ms-transform: scale(1.1,1.1);
+  -webkit-transform: scale(1.1,1.1);
+  box-shadow: 0px 5px 5px -2px rgba(0, 0, 0, 0.25);
+}
+
+SLIDE
+.btnSlide.btnBlueGreen {
+  background: 0;
+}
+
+.btnSlide .top {
+  position: absolute;
+  top: 0px;
+  left: 0;
+  width: 120px;
+  height: 50px;
+  background: #00AE68;
+  z-index: 10;
+  transition: all 0.2s ;
+  border-radius: 5px;
+}
+
+.btnSlide.btnBlueGreen .top {
+  background: #00AE68;
+}
+
+.btnSlide.btnLightBlue .top {
+  background: #5DC8CD;
+}
+
+.btnSlide .bottom {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 120px;
+  height: 50px;
+  color: #000;
+  z-index: 5;
+  border-radius: 5px;
+}
+
+.btnSlide:hover .top {
+  top: 40px;
+}
+ */
+
+
+body {
+	margin: 0;
+    padding: 0;
+	font-family: 'Noto Sans KR', sans-serif;
+	background-image: url("https://cdn.pixabay.com/photo/2021/09/03/02/08/skyscrapers-6594833_1280.png");
+	margin: auto;
+    display: block;
+}
+
+/* 헤더 스타일 */
+.header {
+    height: 75px;
+    padding: 1rem;
+    color: white;
+    background: black;
+    background-color: rgba(0, 0, 0, 0.8);
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+.categories ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.categories li {
+    margin-right: 20px;
+}
+
+.categories li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 10px 15px;
+    text-decoration: none;
+}
+
+.categories ul:after {
+	content: '';
+	display: block;
+	clear: both;
+}
+
+.categories li {
+	float: left;
+}
+
+.categories li a {
+	display: block;
+	color: white;
+	text-align: center;
+	font-weight: bold;
+	padding: 14px 16px;
+	text-decoration: none;
+}
+
+/* 네비바 위에 마우스가 올려졌을 때 */
+.categories li a:hover:not(.active) {
+	background-color: #c0c0c0;
+}
+
+/* 백그라운드 화면 투명도 설정 */
+/* .whiteboard { 
+    background-color:rgba(255, 255, 255, 1);
+    opacity:0.8;
+    width:1650px;
+    height:1810px;
+    left:50%;
+    align-items: center;
+	justify-content: center;
+	margin: 0 auto;
+} */
+
+.buttons{
+	display: flex;
+	positon: absolute;	
+	top:128px;
+	left:330px;
+}
+.btn {
+  width: 130px;
+  height: 40px;
+  padding: 10px 25px;
+  margin:10px;
+  border: 2px solid #000;
+  font-family: 'Lato', sans-serif;
+  font-weight: 500;
+  background: transparent;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+  left:100px;
+}
+.profile_location {
+	width: 887px;
+	height: 197px;
+	position: absolute;
+	left: 330px;
+	top: 183px;
+}
+
+.profile_container {
+	background-color: rgba(255, 255, 255, 1);
+	width: 900px;
+	height: 197px;
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	border: 1px solid rgba(0, 0, 0, 1);
+}
+
+.memberID {
+	color: rgba(0, 0, 0, 1);
+	width: 150px;
+	height: 24px;
+	position: absolute;
+	left: 255px;
+	top: 31px;
+	font-family: Inter;
+	text-align: left;
+	font-size: 15px;
+	letter-spacing: 0;
+}
+
+.profile_img {
+	width: 129px;
+	height: 136px;
+	position: absolute;
+	left: 26px;
+	top: 26px;
+	background-image: url(https://cdn-icons-png.flaticon.com/512/3785/3785463.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.id {
+	color: rgba(0, 0, 0, 1);
+	width: 80px;
+	height: 24px;
+	position: absolute;
+	left: 63px;
+	top: 150px;
+	font-family: Inter;
+	text-align: left;
+	font-size: 15px;
+	letter-spacing: 0;
+}
+
+
+.last_login {
+	color: rgba(0, 0, 0, 1);
+	width: 244px;
+	height: 24px;
+	position: absolute;
+	left: 255px;
+	top: 145px;
+	font-family: Inter;
+	text-align: left;
+	font-size: 15px;
+	letter-spacing: 0;
+}
+
+
+.birth {
+	color: rgba(0, 0, 0, 1);
+	width: 205px;
+	height: 24px;
+	position: absolute;
+	left: 255px;
+	top: 88px;
+	font-family: Inter;
+	text-align: left;
+	font-size: 15px;
+	letter-spacing: 0;
+}
+
+.email {
+	color: rgba(0, 0, 0, 1);
+	width: 229px;
+	height: 24px;
+	position: absolute;
+	left: 604px;
+	top: 88px;
+	font-family: Inter;
+	text-align: left;
+	font-size: 15px;
+	letter-spacing: 0;
+}
+
+.last_log {
+	color: rgba(0, 0, 0, 1);
+	width: 229px;
+	height: 24px;
+	position: absolute;
+	left: 604px;
+	top: 145px;
+	font-family: Inter;
+	text-align: left;
+	font-size: 15px;
+	letter-spacing: 0;
+}
+
+.name {
+	color: rgba(0, 0, 0, 1);
+	width: 157px;
+	height: 24px;
+	position: absolute;
+	left: 604px;
+	top: 31px;
+	font-family: Inter;
+	text-align: left;
+	font-size: 15px;
+	letter-spacing: 0;
+}
+
+.list {
+	color: rgba(0, 0, 0, 1);
+	position: absolute;
+	left: 346px;
+	top: 429px;
+	font-size: 24px;
+}
+
+.festival1_img {
+	width: 240px;
+	height: 321px;
+	position: absolute;
+	left: 313px;
+	top: 486px;
+	background-image: url(../images/image_131.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	border: 1px solid rgba(220, 255, 0, 1);
+}
+
+.icon_1 {
+	width: 70px;
+	height: 70px;
+	position: absolute;
+	left: 554px;
+	top: 486px;
+	background-image: url(../images/icons8____96_1.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.festival1_name {
+	color: rgba(0, 0, 0, 1);
+	width: 200px;
+	height: 24px;
+	position: absolute;
+	left: 567px;
+	top: 579px;
+	font-family: Inter;
+	text-align: left;
+	font-size: 18px;
+	letter-spacing: 0;
+	padding-bottom: 20px;
+}
+
+.festival1_info {
+	width: 157px;
+	height: 75px;
+	position: absolute;
+	left: 571px;
+	top: 616px;
+}
+
+.festival2_img {
+	width: 240px;
+	height: 321px;
+	position: absolute;
+	left: 748px;
+	top: 486px;
+	background-image: url(https://search.pstatic.net/common?quality=75&direct=true&src=https%3A%2F%2Fcsearch-phinf.pstatic.net%2F20220706_207%2F1657105250051DXKt5_JPEG%2F2769668_image2_1.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	border: 1px solid rgba(220, 255, 0, 1);
+}
+
+.icon_2 {
+	width: 70px;
+	height: 70px;
+	position: absolute;
+	left: 993px;
+	top: 486px;
+	background-image: url(../images/icons8____96_1.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.festival2_name {
+	color: rgba(0, 0, 0, 1);
+	width: 165px;
+	height: 24px;
+	position: absolute;
+	left: 1002px;
+	top: 579px;
+	font-family: Inter;
+	text-align: left;
+	font-size: 18px;
+	letter-spacing: 0;
+	padding-bottom: 20px;
+}
+
+.festival2_info {
+	width: 157px;
+	height: 75px;
+	position: absolute;
+	left: 1007px;
+	top: 616px;
+}
+
+.festival3_img {
+	width: 240px;
+	height: 321px;
+	position: absolute;
+	left: 1188px;
+	top: 486px;
+	background-image: url(https://search.pstatic.net/common?quality=75&direct=true&src=https%3A%2F%2Fcsearch-phinf.pstatic.net%2F20220706_211%2F1657105883433RFst6_PNG%2F2689776_image2_1.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	border: 1px solid rgba(219.30000364780426, 255, 0, 1);
+}
+
+.icon_3 {
+	width: 70px;
+	height: 70px;
+	position: absolute;
+	left: 1433px;
+	top: 486px;
+	background-image: url(../images/icons8____96_1.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.festival3_name {
+	color: rgba(0, 0, 0, 1);
+	width: 165px;
+	height: 24px;
+	position: absolute;
+	left: 1438px;
+	top: 579px;
+	font-family: Inter;
+	text-align: left;
+	font-size: 18px;
+	letter-spacing: 0;
+	padding-bottom: 20px;
+}
+
+.festival3_info {
+	width: 157px;
+	height: 75px;
+	position: absolute;
+	left: 1443px;
+	top: 616px;
+}
+
+.festival4_img {
+	width: 240px;
+	height: 321px;
+	position: absolute;
+	left: 313px;
+	top: 856px;
+	background-image: url(https://search.pstatic.net/common?quality=75&direct=true&src=https%3A%2F%2Fcsearch-phinf.pstatic.net%2F20230428_231%2F1682659840720Fpe4J_JPEG%2F110_25715075_manual_image_url_1682659840676.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	border: 1px solid rgba(219.30000364780426, 255, 0, 1);
+}
+
+.icon_4 {
+	width: 70px;
+	height: 70px;
+	position: absolute;
+	left: 554px;
+	top: 856px;
+	background-image: url(../images/icons8____96_1.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.festival4_name {
+	color: rgba(0, 0, 0, 1);
+	width: 165px;
+	height: 24px;
+	position: absolute;
+	left: 566px;
+	top: 949px;
+	font-family: Inter;
+	text-align: left;
+	font-size: 18px;
+	letter-spacing: 0;
+	padding-bottom: 20px;
+}
+
+.festival4_info {
+	width: 157px;
+	height: 75px;
+	position: absolute;
+	left: 571px;
+	top: 986px;
+}
+
+.festival5_img {
+	width: 240px;
+	height: 321px;
+	position: absolute;
+	left: 748px;
+	top: 856px;
+	background-image: url(https://korean.visitkorea.or.kr/kfes/upload/contents/db/400_38e0bdc9-2b59-4f07-bdcf-8e86ef253ef4_2.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	border: 1px solid rgba(219.30000364780426, 255, 0, 1);
+}
+
+.icon_5 {
+	width: 70px;
+	height: 70px;
+	position: absolute;
+	left: 988px;
+	top: 856px;
+	background-image: url(../images/icons8____96_1.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.festival5_name {
+	color: rgba(0, 0, 0, 1);
+	width: 165px;
+	height: 24px;
+	position: absolute;
+	left: 1002px;
+	top: 949px;
+	font-family: Inter;
+	text-align: left;
+	font-size: 18px;
+	letter-spacing: 0;
+}
+
+.festival5_info {
+	width: 157px;
+	height: 75px;
+	position: absolute;
+	left: 1007px;
+	top: 986px;
+}
+
+.festival6_img {
+	width: 240px;
+	height: 321px;
+	position: absolute;
+	left: 1188px;
+	top: 856px;
+	background-image: url(https://korean.visitkorea.or.kr/kfes/upload/contents/db/400_345be2fc-7bdc-41a8-8e8a-b4e835e2f09b_3.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	border: 1px solid rgba(219.30000364780426, 255, 0, 1);
+}
+
+.icon_6 {
+	width: 70px;
+	height: 70px;
+	position: absolute;
+	left: 1433px;
+	top: 856px;
+	background-image: url(../images/icons8____96_1.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.festival6_name {
+	color: rgba(0, 0, 0, 1);
+	width: 165px;
+	height: 24px;
+	position: absolute;
+	left: 1438px;
+	top: 949px;
+	font-family: Inter;
+	text-align: left;
+	font-size: 18px;
+	letter-spacing: 0;
+}
+
+.festival6_info {
+	width: 157px;
+	height: 75px;
+	position: absolute;
+	left: 1443px;
+	top: 986px;
+}
+
+.festival_day {
+	color: rgba(0, 0, 0, 1);
+	width: 124px;
+	height: 19px;
+	position: absolute;
+	left: 16px;
+	font-family: Inter;
+	text-align: left;
+	font-size: 13px;
+	letter-spacing: 0;
+	padding-top: 30px;
+}
+
+.festival_location {
+	color: rgba(0, 0, 0, 1);
+	width: 157px;
+	height: 19px;
+	position: absolute;
+	left: 0px;
+	top: 28px;
+	font-family: Inter;
+	text-align: left;
+	font-size: 13px;
+	letter-spacing: 0;
+	padding-top: 50px;
+}
+
+.festival_phone {
+	color: rgba(0, 0, 0, 1);
+	width: 112px;
+	height: 19px;
+	position: absolute;
+	left: 22px;
+	top: 56px;
+	font-family: Inter;
+	text-align: left;
+	font-size: 13px;
+	letter-spacing: 0;
+	padding-top: 70px;
+}
+

@@ -1,0 +1,627 @@
+@charset "UTF-8";
+
+/*
+.fonts {
+  font-family: 'Josefin Slab', serif;
+}
+*/
+
+/*
+.boardTitle.check a, a:visited {
+  text-decoration: none;
+  color: #00AE68;
+}
+*/ 
+
+a, a:visited {
+  text-decoration: none;
+}
+
+.clear {
+  clear: both;
+}
+
+.pageTitle {
+  font-size: 2em;
+  font-weight: 700;
+  text-transform: uppercase;
+  line-height: 1em;
+  color: #00AE68;
+}
+
+.pageSubTitle {
+  margin-bottom: 0.5em;
+  font-size: 1.3em;
+  font-weight: 700;
+  line-height: 1em;
+  color: #222;
+}
+
+.articleTitle {
+  font-size: 1.15em;
+  font-weight: 700;
+  line-height: 1em;
+  color: #222;
+}
+
+.wrapper {
+  width: 600px;
+  margin: 20px auto;
+}
+
+.boardModifyBtn {
+	position: relative;
+	float: right;
+    top: 30px;
+    left: 13px;
+}
+
+a.button {
+  display: block;
+  position: relative;
+  float: left;
+  width: 120px;
+  padding: 0;
+  margin: 10px 20px 10px 0;
+  font-weight: 600;
+  text-align: center;
+  line-height: 50px;
+  color: #FFF;
+  border-radius: 5px;
+  transition: all 0.2s ;
+}
+
+.btnBlueGreen {
+  background: #00AE68;
+}
+
+.btnLightBlue {
+  background: #5DC8CD;
+}
+
+/* FADE */
+.btnFade.btnBlueGreen:hover {
+  background: #21825B;
+}
+
+.btnFade.btnLightBlue:hover {
+  background: #01939A;
+}
+
+/* 3D */
+.btnBlueGreen.btnPush {
+  box-shadow: 0px 5px 0px 0px #007144;
+}
+
+.btnLightBlue.btnPush {
+  box-shadow: 0px 5px 0px 0px #1E8185;
+}
+
+.btnPush:hover {
+  margin-top: 15px;
+  margin-bottom: 5px;
+}
+
+.btnBlueGreen.btnPush:hover {
+  box-shadow: 0px 0px 0px 0px #007144;
+}
+
+.btnLightBlue.btnPush:hover {
+  box-shadow: 0px 0px 0px 0px #1E8185;
+}
+
+/* BORDER */
+.btnBlueGreen.btnBorder {
+  box-shadow: 0px 0px 0px 0px #21825B;
+}
+
+.btnBlueGreen.btnBorder:hover {
+  box-shadow: 0px 0px 0px 5px #21825B;
+}
+
+.btnLightBlue.btnBorder {
+  box-shadow: 0px 0px 0px 0px #01939A;
+}
+
+.btnLightBlue.btnBorder:hover {
+  box-shadow: 0px 0px 0px 5px #01939A;
+}
+
+/* FLOAT */
+.btnFloat {
+  background: none;
+  box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.5);
+}
+
+.btnFloat:before {
+  content: 'Float';
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 120px;
+  height: 50px;
+  border-radius: 5px;
+  transition: all 0.2s ;
+}
+
+.btnBlueGreen.btnFloat:before {
+  background: #00AE68;
+}
+
+.btnLightBlue.btnFloat:before {
+  background: #5DC8CD;
+}
+
+.btnFloat:before {
+  box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.4);
+}
+
+.btnFloat:hover:before {
+  
+}
+
+.btnFloat:hover:before {
+  margin-top: -2px;
+  margin-left: 0px;
+  transform: scale(1.1,1.1);
+  -ms-transform: scale(1.1,1.1);
+  -webkit-transform: scale(1.1,1.1);
+  box-shadow: 0px 5px 5px -2px rgba(0, 0, 0, 0.25);
+}
+
+/* SLIDE */
+.btnSlide.btnBlueGreen {
+  background: 0;
+}
+
+.btnSlide .top {
+  position: absolute;
+  top: 0px;
+  left: 0;
+  width: 120px;
+  height: 50px;
+  background: #00AE68;
+  z-index: 10;
+  transition: all 0.2s ;
+  border-radius: 5px;
+}
+
+.btnSlide.btnBlueGreen .top {
+  background: #00AE68;
+}
+
+.btnSlide.btnLightBlue .top {
+  background: #5DC8CD;
+}
+
+.btnSlide .bottom {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 120px;
+  height: 50px;
+  color: #000;
+  z-index: 5;
+  border-radius: 5px;
+}
+
+.btnSlide:hover .top {
+  top: 40px;
+}
+
+.comment.commentTitle {
+	text-align:left; 
+	background-color: skyblue;
+}
+
+.commentTable {
+	width: 100%; 
+	table-layout: fixed; 
+	word-break: break-all; 
+	height: auto;
+}
+
+.pageButton.commentUpdate {
+	background-color: #008040;
+    padding : 5px 20px;
+    border: solid 5px pink;
+	border-radius: 10px;
+	color: white;
+	font-size: 15px;
+	text-decoration: none;
+	position: relative;
+	float: right;
+	right: 5px;
+}
+
+.pageButton.commentDelete {
+	background-color: #ff8080;
+    padding : 5px 20px;
+    border: solid 5px pink;
+	border-radius: 10px;
+	color: white;
+	font-size: 15px;
+	text-decoration: none;
+	position: relative;
+	float: right;
+	left: 5px;
+}
+
+/* 
+.commentModule {
+	top: 15px;	
+}
+
+.content {
+	font-family: Georgia serif;
+}
+*/
+
+.comment.writer {
+	text-align: left;	
+}
+
+.comment.comment {
+	text-align: left;
+}
+
+.comment.date {
+	text-align: right;
+}
+
+.comment.commentBtn{
+	text-align: right;
+}
+
+.boardView.writer {
+	width: 10%
+}
+
+.boardView.createDate {
+	width: 10%
+}
+
+.boardView.content {
+	colspan: 1;
+	height: 100%; 
+	text-align: left;
+}
+
+.pageBtn {
+	background-color: #808040;
+    padding : 5px 20px;
+    border: solid 5px pink;
+	border-radius: 10px;
+	color: white;
+	font-size: 15px;
+	text-decoration: none;
+	position: relative;
+	top: 10px;
+}
+
+.boardSearch {
+	background-color: #808040;
+	color: white;
+	position: relative;
+	border: solid 1px pink;
+	border-radius: 15px;
+	font-size: 15px;
+	padding : 5px 20px;	
+}
+
+.pageButton.boardList {
+	background-color: #808040;
+    padding : 5px 20px;
+    border: solid 5px pink;
+	border-radius: 10px;
+	color: white;
+	font-size: 15px;
+	text-decoration: none;
+	position: relative;
+	top: 25px;
+}
+
+.pageBtn a:hover, a:active {
+   opacity: 0.7;
+}
+
+.paging {
+	padding : 10px;
+	position: relative;
+	top: 10px;
+	text-decoration: none;
+	font-size: 17px;
+}
+
+.pageBtnDelete {
+	background-color: #808040;
+    padding : 10px 30px;
+    border: solid 5px pink;
+	border-radius: 10px;
+	color: white;
+	font-size: 15px;
+	text-decoration: none;
+	position: relative;
+	top: 33px;
+	float: right;
+}
+
+.pageBtnUpdate {
+	background-color: #808040;
+    padding : 10px 30px;
+    border: solid 5px pink;
+	border-radius: 10px;
+	color: white;
+	font-size: 15px;
+	text-decoration: none;
+	position: relative;
+	top: 33px;
+	float: right;
+	right: 9px;
+}
+
+.boardRecommend {
+	background-color: #808040;
+    padding : 10px 30px;
+    border: solid 5px pink;
+	border-radius: 10px;
+	color: white;
+	font-size: 15px;
+	text-decoration: none;
+	position: relative;
+	top: 40px;
+	float: right;
+	left: 9px;
+}
+
+.btn {
+  background: hsl(var(--hue), 98%, 80%);
+  border: none;
+  border-radius: 7px;
+  cursor: pointer;
+  color: black;
+  font: 600 1.05rem/1 "Nunito", sans-serif;
+  letter-spacing: 0.05em;
+  overflow: hidden;
+  padding: 1.15em 3.5em;
+  min-height: 3.3em;
+  position: relative;
+  text-transform: lowercase;
+  float: right;
+  top: 27px;
+}
+.btn--blue {
+  --hue: 210;
+}
+.btn:active, .btn:focus {
+  outline: 3px solid hsl(calc(var(--hue) + 90), 98%, 80%);
+}
+.btn + .btn {
+  margin-top: 2.5em;
+}
+.btn__txt {
+  position: relative;
+  z-index: 2;
+}
+.btn__bg {
+  background: hsl(var(--hueBg), 98%, 80%);
+  border-radius: 50%;
+  display: block;
+  height: 0;
+  left: 50%;
+  margin: -50% 0 0 -50%;
+  padding-top: 100%;
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  transform: scale(0);
+  transform-origin: 50% 50%;
+  transition: transform 0.175s cubic-bezier(0.5, 1, 0.89, 1);
+  z-index: 1;
+}
+.btn__bg:nth-of-type(1) {
+  --hueBg: calc(var(--hue) - 90);
+  transition-delay: 0.1725s;
+}
+.btn__bg:nth-of-type(2) {
+  --hueBg: calc(var(--hue) - 180);
+  transition-delay: 0.115s;
+}
+.btn__bg:nth-of-type(3) {
+  --hueBg: calc(var(--hue) - 270);
+  transition-delay: 0.0575s;
+}
+.btn__bg:nth-of-type(4) {
+  --hueBg: calc(var(--hue) - 360);
+  transition-delay: 0s;
+}
+.btn:hover .btn__bg, .btn:focus .btn__bg, .btn:active .btn__bg {
+  transform: scale(1.5);
+  transition: transform 0.35s cubic-bezier(0.11, 0, 0.5, 0);
+}
+.btn:hover .btn__bg:nth-of-type(1), .btn:focus .btn__bg:nth-of-type(1), .btn:active .btn__bg:nth-of-type(1) {
+  transition-delay: 0.115s;
+}
+.btn:hover .btn__bg:nth-of-type(2), .btn:focus .btn__bg:nth-of-type(2), .btn:active .btn__bg:nth-of-type(2) {
+  transition-delay: 0.23s;
+}
+.btn:hover .btn__bg:nth-of-type(3), .btn:focus .btn__bg:nth-of-type(3), .btn:active .btn__bg:nth-of-type(3) {
+  transition-delay: 0.345s;
+}
+.btn:hover .btn__bg:nth-of-type(4), .btn:focus .btn__bg:nth-of-type(4), .btn:active .btn__bg:nth-of-type(4) {
+  transition-delay: 0.46s;
+}
+
+
+/* 글 작성시 내용 부분 CSS */
+input {
+  width: 100%;
+  height: 32px;
+  font-size: 15px;
+  border: 0;
+  border-radius: 15px;
+  outline: none;
+  padding-left: 10px;
+  background-color: rgb(233, 233, 233);
+}
+
+/* 글 작성시 내용 부분 CSS */
+textarea {
+	width: 100%;
+	height: 500px;
+	font-size: 15px;
+	border: 0;
+	border-radius: 15px;
+	outline: none;
+	padding-left: 10px;
+	background-color: rgb(233, 233, 233);
+	resize: none; /* 사용자 임의 변경 불가 */
+}
+	
+a {
+	text-decoration-line: none;
+}
+
+.header {
+	height: 75px;
+	padding: 1rem;
+	color: white;
+	background: black;
+	background-color: rgba(0, 0, 0, 0);
+	font-weight: bold;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.logo {
+	font-size: 12px;
+	color: white;
+	width: 100px;
+	height: 90px;
+	margin: 0;
+}
+
+.logo a {
+	text-decoration: none;
+	color: black;
+	font-weight: bold;
+}
+
+.categories ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	display: flex;
+	positon: absolute;
+	width: 100%;
+	height: 45px;
+}
+
+.categories ul:after {
+	content: '';
+	display: block;
+	clear: both;
+}
+
+.categories li {
+	float: left;
+}
+
+.categories li a {
+	display: block;
+	color: black;
+	text-align: center;
+	font-weight: bold;
+	padding: 14px 16px;
+	text-decoration: none;
+}
+
+/* 네비바 위에 마우스가 올려졌을 때 */
+.categories li a:hover:not(.active) {
+	background-color: #c0c0c0;
+}
+
+body {
+  padding:1.5em;
+  background: #f5f5f5
+}
+
+table {
+  border: 1px #a39485 solid;
+  font-size: .9em;
+  box-shadow: 0 2px 5px rgba(0,0,0,.25);
+  width: 100%;
+  border-collapse: collapse;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+th {
+  text-align: left;
+}
+  
+thead {
+  font-weight: bold;
+  color: #fff;
+  background: #73685d;
+}
+  
+ td, th {
+  padding: 1em .5em;
+  vertical-align: middle;
+}
+  
+ td {
+  border-bottom: 1px solid rgba(0,0,0,.1);
+  background: #fff;
+}
+
+a {
+  color: #73685d;
+}
+  
+ @media all and (max-width: 768px) {
+    
+  table, thead, tbody, th, td, tr {
+    display: block;
+  }
+  
+  th {
+    text-align: right;
+  }
+  
+  table {
+    position: relative; 
+    padding-bottom: 0;
+    border: none;
+    box-shadow: 0 0 10px rgba(0,0,0,.2);
+  }
+  
+  thead {
+    float: left;
+    white-space: nowrap;
+  }
+  
+  tbody {
+    overflow-x: auto;
+    overflow-y: hidden;
+    position: relative;
+    white-space: nowrap;
+  }
+  
+  tr {
+    display: inline-block;
+    vertical-align: top;
+  }
+  
+  th {
+    border-bottom: 1px solid #a39485;
+  }
+  
+  td {
+    border-bottom: 1px solid #e5e5e5;
+  }
+}
+  

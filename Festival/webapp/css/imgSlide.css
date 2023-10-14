@@ -1,0 +1,20 @@
+.swiper-container {
+	height:320px;
+	border:3px solid silver;
+	border-radius:9px;
+	box-shadow:0 0 20px #ffffff none;
+}
+.swiper-slide {
+	text-align:center;
+	display:flex; /* 내용을 중앙정렬 하기위해 flex 사용 */
+	align-items:center; /* 위아래 기준 중앙정렬 */
+	justify-content:center; /* 좌우 기준 중앙정렬 */
+}
+.swiper-slide img {
+	box-shadow:0 0 5px #555;
+	max-width: 80%; /* 이미지 최대너비를 제한, 슬라이드에 이미지가 여러개가 보여질때 필요 */
+}
+
+h2 {
+	color: #ffffff;
+}

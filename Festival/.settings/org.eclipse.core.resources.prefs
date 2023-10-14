@@ -1,0 +1,5 @@
+eclipse.preferences.version=1
+encoding//src/main/java/board/BoardDAO.java=UTF-8
+encoding//src/main/java/comment/CommentDAO.java=UTF-8
+encoding//src/main/java/likey/LikeyDAO.java=UTF-8
+encoding//src/main/java/user/UserDAO.java=UTF-8
